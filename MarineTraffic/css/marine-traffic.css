@@ -1,0 +1,62 @@
+* {
+    transition: 300ms;
+	transition: visible 1ms linear;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #010b26;
+	margin: 0;
+}
+
+.header {
+	background: #00186b;
+	color: #ffffff;
+	box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+	padding: 10px;
+	text-align: center;
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	min-height: 48px;
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.logo {
+	font-size: 1.4em;
+	margin: 0;
+}
+
+.main {
+    background-image: linear-gradient(-180deg, #173d9a, #00186b);
+	position: absolute;
+	left: 0;
+	top: 48px;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.map {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+}
