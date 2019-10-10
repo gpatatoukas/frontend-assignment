@@ -1,0 +1,35 @@
+.info-window {
+  position: relative;
+  bottom: 125px;
+  left: -45px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-size: 14px;
+  z-index: 100;
+}
+
+.info-header {
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+
+.info-footer {
+  font-size: 12px;
+}
+
+.gray-text {
+  color: grey;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.green-text {
+  color: green;
+}
+
