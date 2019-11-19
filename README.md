@@ -1,17 +1,23 @@
-# Daily Vessel tracks (markers and animation)
+# ReactMarine
 
-Your task is to present daily vessel tracks on a map and animate them.
+A single page app designed display a vessels route.
 
-Consume dataset from our [API url](https://services.marinetraffic.com/api/exportvesseltrack/v:2/cf8f05df0b57bfae43e762cc61fd381239c4c042/) adding any necessary extra parameters like MMSI and days.
+# Prerequisites
 
-Documentation on the API can be found [here](https://www.marinetraffic.com/en/ais-api-services/documentation/api-service:ps01).
+In order to be able to run the app you will need to have npm installed. For
+detailed information you can go to https://www.npmjs.com/get-npm.
 
-**We expect:**
-* Waypoints with informational tooltips.
-* A form of waypoint clustering.
-* Animation controls.
-* Javascript code (Any JS Framework or Library)
+# Installing
 
-**Share your work:**
-* Stage your solution on a demo page or
-* Fork this repo and create a pull request that contains your implementation in a new branch named after you.
+To install the app you simply have to access the app folder on the terminal or
+command prompt and excecute `npm install` and `npm start`. This runs the app in
+the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you want to build the app for production run `npm run build` and then
+`serve -s build` if any package is needed you will be notified by the prompt.
+You can find more info in [deployment](https://facebook.github.io/create-react-app/docs/deployment).
+
+# Built with
+
+Reactjs
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
