@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="caption">Track my Vessel</h1>
+    <div class="row main-content">
+      <div class="col-3 form-container">
+        <form id="search-form">
+          <div class="form-group">
+            <label>MMSI</label>
+            <input id="search-form__mmsi" class="form-control" />
+            <div class="form-input-error" id="mmsi-input-error">
+              *MMSI must be a 9 digit number
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Period</label>
+            <select
+              class="form-control"
+              placeholder="select"
+              id="search-form__period"
+            >
+              <option disabled selected value>--- select an option ---</option>
+              <option>hourly</option>
+              <option>daily</option>
+            </select>
+            <div class="form-input-error" id="period-input-error">
+              *Please select one of the above options
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Days</label>
+            <input
+              id="search-form__days"
+              class="form-control"
+              type="number"
+              min="1"
+              max="190"
+            />
+            <div class="form-input-error" id="days-input-error">
+              *Please select a valid number of days
+            </div>
+          </div>
+        </form>
+        <button id="search-button" class="btn btn-primary">Search</button>
+      </div>
+      <div class="col-9">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAz0bNQImkOSZoqwkCkTMp2Eb5SLsDEHI"></script>
+    <script type="text/javascript">
+      window.MarineTraffic = {};
+    </script>
+    <script
+      type="text/javascript"
+      src="scripts/modules/VesselTrack.js"
+    ></script>
+    <script type="text/javascript" src="scripts/modules/validation.js"></script>
+    <script type="text/javascript" src="scripts/modules/api.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
