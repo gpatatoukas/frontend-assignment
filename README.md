@@ -1,17 +1,25 @@
 # Daily Vessel tracks (markers and animation)
 
-Your task is to present daily vessel tracks on a map and animate them.
+## Single page app showing daily vessel routes
 
-Consume dataset from our [API url](https://services.marinetraffic.com/api/exportvesseltrack/v:2/cf8f05df0b57bfae43e762cc61fd381239c4c042/) adding any necessary extra parameters like MMSI and days.
+## Features
 
-Documentation on the API can be found [here](https://www.marinetraffic.com/en/ais-api-services/documentation/api-service:ps01).
+- Dynamic vessel routes using 4 predefined vessels saved in `src/utilities.js`
+- Popups with information about location, speed, direction etc
+- Vessel path animation and a trailing line behind it
+- Color coded animation controls to start, pause, stop, forward, rewind, and jump to a specific point of the route
+- Marker clustering when you zoom out enough
 
-**We expect:**
-* Waypoints with informational tooltips.
-* A form of waypoint clustering.
-* Animation controls.
-* Javascript code (Any JS Framework or Library)
+## Installing
 
-**Share your work:**
-* Stage your solution on a demo page or
-* Fork this repo and create a pull request that contains your implementation in a new branch named after you.
+- Run `yarn` or `npm install` in the project folder
+- Run `npm start` to run in developer mode and it will open in the browser automagically
+
+## Building
+
+- Run `npm run build`
+- The built project files will be located in the `build` folder
+
+## Built with react, leaflet and a couple plugins
+
+Didn't use redux because it wasn't needed

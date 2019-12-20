@@ -1,0 +1,36 @@
+.PopupSection {
+  white-space: nowrap;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  .PopupHeader {
+    // text-align: center;
+    font-size: 1.15em;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+  }
+  .PopupTitle {
+    font-size: 1.05em;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .PopupBody {
+    margin: 0.35em 0;
+    margin-left: 0.25rem;
+    display: inline-block;
+  }
+}
+.controlButton {
+  font-size: 1.25em;
+  background-color: #efefef;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.08s ease-in;
+  margin-right: 0.5rem;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}

@@ -1,0 +1,30 @@
+.controlWrapper {
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+
+  .controlButton {
+    font-size: 2em;
+    background-color: #efefef;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.08s ease-in;
+    margin-right: 0.5rem;
+    color: #333;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  .controlIcon {
+    vertical-align: sub;
+  }
+  .sliderContainer {
+    margin-left: 1rem;
+    display: inline-block;
+  }
+}
